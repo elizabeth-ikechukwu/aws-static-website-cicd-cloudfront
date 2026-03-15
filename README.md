@@ -91,7 +91,6 @@ CloudFront cache is automatically invalidated after deployment to ensure users a
 
 ### Live Website
 ![Live Website](screenshots/05-live-website.png)
-
 ---
 
 # Repository Structure
