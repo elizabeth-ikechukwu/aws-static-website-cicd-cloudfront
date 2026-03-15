@@ -131,6 +131,22 @@ Through this project I practiced:
 
 ---
 
+## Troubleshooting
+
+### DNS Propagation & ACM Certificate Validation
+
+After configuring the custom domain and requesting an ACM certificate, the HTTPS certificate was not issued immediately.
+
+Investigation revealed that the DNS provider did not initially allow the required **CAA record for Amazon Certificate Authority**.
+
+**Resolution**
+
+* Added the appropriate **CAA record** allowing `amazon.com` to issue certificates
+* Waited for DNS propagation
+* ACM certificate validation completed successfully
+
+This type of issue commonly occurs when integrating **external DNS providers with AWS services such as ACM and CloudFront**.
+
 # Author
 
 Ikechukwu Elizabeth Nkwo  
