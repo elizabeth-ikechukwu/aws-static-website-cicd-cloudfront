@@ -75,7 +75,7 @@ CloudFront cache is automatically invalidated after deployment to ensure users a
 
 ---
 
-# Project Evidence
+## Project Evidence
 
 ### CloudFront Distribution
 ![CloudFront Distribution](screenshots/01-cloud-front-distribution.png)
