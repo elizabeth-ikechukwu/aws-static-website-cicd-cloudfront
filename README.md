@@ -44,22 +44,23 @@ The system ensures:
 
 ---
 
-## Project Evidence
+# Key DevOps Features
 
-### CloudFront Distribution
-![CloudFront Distribution](screenshots/01-cloudfront-distribution.png)
+### CI/CD Automation
+GitHub Actions automatically deploys new changes whenever code is pushed to the repository.
 
-### Private S3 Bucket (Block Public Access Enabled)
-![S3 Security](screenshots/02-s3-private-bucket.png)
+### Secure Infrastructure
+The S3 bucket is **private** and accessible only through **CloudFront Origin Access Control (OAC)**.
 
-### GitHub Actions CI/CD Deployment
-![CI/CD Success](screenshots/03-github-actions-success.png)
+### Global CDN Delivery
+CloudFront distributes the website through AWS edge locations worldwide.
 
-### CloudFront Cache Invalidation
-![CloudFront Invalidation](screenshots/04-cloudfront-invalidation.png)
+### HTTPS Encryption
+TLS certificates are managed through **AWS Certificate Manager (ACM)**.
 
-### Live Website
-![Live Website](screenshots/05-live-website.png)
+### Cache Invalidation
+CloudFront cache is automatically invalidated after deployment to ensure users always see the latest version.
+
 ---
 
 # Technologies Used
@@ -77,19 +78,19 @@ The system ensures:
 ## Project Evidence
 
 ### CloudFront Distribution
-![CloudFront Distribution](01-cloud-front-distribution.png)
+![CloudFront Distribution](screenshots/01-cloudfront-distribution.png)
 
 ### Private S3 Bucket (Block Public Access Enabled)
-![S3 Security](02-s3-private-bucket.png)
+![S3 Security](screenshots/02-s3-private-bucket.png)
 
 ### GitHub Actions CI/CD Deployment
-![CI/CD Success](03-github-actions-success.png)
+![CI/CD Success](screenshots/03-github-actions-success.png)
 
 ### CloudFront Cache Invalidation
-![CloudFront Invalidation](04-cloudfront-invalidation.png)
+![CloudFront Invalidation](screenshots/04-cloudfront-invalidation.png)
 
 ### Live Website
-![Live Website](05-live-website.png)
+![Live Website](screenshots/05-live-website.png)
 ---
 
 # Repository Structure
